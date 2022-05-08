@@ -1,0 +1,120 @@
+.feature {
+  display: flex;
+  @extend %list;
+
+  &__thumb {
+    background-color: $alternate-background-color;
+    text-align: center;
+
+    @include centeredFlex;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $title-text-color;
+    @extend %uppercase-title;
+
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    margin-right: 30px;
+    position: relative;
+  }
+}
+
+.work {
+  display: flex;
+  @extend %list;
+
+  &__title {
+    color: $white-color;
+    @extend %uppercase-title;
+
+    @include centeredFlex;
+    min-height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: $title-background-color;
+  }
+
+  &__item {
+    margin-right: 30px;
+    position: relative;
+  }
+}
+
+.section--team-bg {
+  background-color: $alternate-background-color;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  @extend %list;
+
+  &__item {
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-right: 30px;
+  }
+
+  &__desc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  &__job {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
+
+.feature-item:last-child,
+.work-item:last-child,
+.team-item:last-child {
+  margin-right: 0;
+}
+
+.client {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+
+  &__link {
+    @include centeredFlex;
+    color: $grey-color;
+    height: 100%;
+    width: 100%;
+    border: 1px solid $grey-color;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border-color: inherit;
+    }
+  }
+}
