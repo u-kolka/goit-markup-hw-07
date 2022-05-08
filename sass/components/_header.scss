@@ -1,4 +1,4 @@
-.page-header {
+.header {
   @include centeredFlex();
   min-height: 80px;
   border-bottom: 1px solid $header-border-color;
@@ -18,7 +18,7 @@
   }
 }
 
-.page-header__link,
+.header__link,
 .contact__link {
   position: relative;
   color: $title-text-color;
@@ -37,7 +37,7 @@
   }
 }
 
-.page-header__link.current {
+.header__link.current {
   color: $accent-color;
 
   &::after {
@@ -68,6 +68,7 @@
   }
 
   &__icon {
+    @extend %icon;
     margin-right: 10px;
   }
 }

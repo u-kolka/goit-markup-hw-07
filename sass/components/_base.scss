@@ -1,7 +1,7 @@
 body {
   background-color: $main-background-color;
   color: $primery-text-color;
-  font-family: "Roboto", sans-serif;
+  font-family: $main-font-family;
   font-weight: 400;
   font-size: $main-font-size;
   line-height: 1.71;
@@ -46,11 +46,19 @@ img {
   height: auto;
 }
 
-.icon {
-  display: inline-block;
-  fill: currentColor;
+.no-top-padding {
+  padding-top: 0;
 }
 
-.no-padding {
-  padding-top: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
