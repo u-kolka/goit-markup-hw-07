@@ -56,7 +56,7 @@
 
   &__btn-send {
     @extend %button;
-    @include centeredMargin;
+    @extend %centeredMargin;
     display: block;
     min-width: 200px;
     padding: 10px 55px;

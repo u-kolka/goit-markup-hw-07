@@ -1,5 +1,5 @@
 .hero {
-  @include centeredMargin;
+  @extend %centeredMargin;
   background-color: $hero-background-color;
   text-align: center;
   padding-top: 200px;

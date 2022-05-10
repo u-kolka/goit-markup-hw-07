@@ -18,10 +18,10 @@
           <nav class="header__nav">
                  <a href="./index.html" class="logo"><span class="logo__part">Web</span>Studio</a>
             
-                <ul class="header__nav">
-                     <li class="header__item"><a href="./index.html" class="header__link current">Студия</a></li>
-                     <li class="header__item"><a href="./portfolio.html" class="header__link">Портфолио</a></li>
-                     <li class="header__item"><a href="" class="header__link">Контакты</a></li>
+                <ul class="site-nav">
+                     <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
           </nav>
             <!-- Контакты студии -->
@@ -98,16 +98,16 @@
                 </div>
             </section>
             <!-- Секция Чем мы занимаемся -->
-            <section class="section no-top-padding">
+            <section class="section section--no-top-padding">
                 <div class="container">
                     <h2 class="section__title">Чем мы занимаемся</h2>
                     <ul class="work">
                         <li class="work__item"><img src="./images/Разработка.jpg" alt="Разработка продукта" width="370">
-                        <p class="work__title">Десктопные приложения</p></li>
+                        <p class="work__text">Десктопные приложения</p></li>
                         <li class="work__item"><img src="./images/Оптимизация.jpg" alt="Оптимизация под различные устройства" width="370">
-                        <p class="work__title">Мобильные приложения</p></li>
+                        <p class="work__text">Мобильные приложения</p></li>
                         <li class="work__item"><img src="./images/Дизайн.jpg" alt="Оформление дизайна" width="370">
-                        <p class="work__title">Дизайнерские решения</p></li>
+                        <p class="work__text">Дизайнерские решения</p></li>
                     </ul>
                 </div>
             </section>
@@ -120,7 +120,7 @@
                             <img src="./images/Игорь-Демьяненко.jpg" alt="Игорь Демьяненко" width="270">
                             <div class="team__desc">
                                 <h3 class="team__title">Игорь Демьяненко</h3>
-                                <p lang="en" class="team__job">Product Designer</p>
+                                <p lang="en" class="team__text">Product Designer</p>
                             <ul class="social">
                                 <li class="social__item">
                                     <a href="" class="social__link">
@@ -157,7 +157,7 @@
                             <img src="./images/Ольга-Репина.jpg" alt="Ольга Репина" width="270">
                             <div class="team__desc">
                                 <h3 class="team__title">Ольга Репина</h3>
-                                <p lang="en" class="team__job">Frontend Developer</p>
+                                <p lang="en" class="team__text">Frontend Developer</p>
                                 <ul class="social list">
                                     <li class="social__item">
                                         <a href="" class="social__link">
@@ -194,7 +194,7 @@
                             <img src="./images/Николай-Тарасов.jpg" alt="Николай Тарасов" width="270">
                             <div class="team__desc">
                                 <h3 class="team__title">Николай Тарасов</h3>
-                                <p lang="en" class="team__job">Marketing</p>
+                                <p lang="en" class="team__text">Marketing</p>
                                 <ul class="social list">
                                     <li class="social__item">
                                         <a href="" class="social__link">
@@ -231,7 +231,7 @@
                             <img src="./images/Михаил-Ермаков.jpg" alt="Михаил Ермаков" width="270">
                            <div class="team__desc">
                                 <h3 class="team__title">Михаил Ермаков</h3>
-                                <p lang="en" class="team__job">UI Designer</p>
+                                <p lang="en" class="team__text">UI Designer</p>
                                 <ul class="social list">
                                     <li class="social__item">
                                         <a href="" class="social__link">
@@ -409,7 +409,7 @@
             <textarea class="form__textarea" name="comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
 
             <label class="checkbox__label" for="policy">
-                <input class="checkbox" type="checkbox" name="policy" id="policy">
+                <input class="checkbox visually-hidden" type="checkbox" name="policy" id="policy">
                 
                 <svg class="checkbox__icon" width="16" height="15">
                     <use href="./images/symbol-defs.svg#icon-check-mark"></use>

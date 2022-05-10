@@ -33,21 +33,21 @@ h6 {
   }
 }
 
+.section--no-top-padding {
+  padding-top: 0;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  @include centeredMargin;
+  @extend %centeredMargin;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.no-top-padding {
-  padding-top: 0;
 }
 
 .visually-hidden {
